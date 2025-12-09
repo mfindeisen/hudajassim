@@ -24,8 +24,12 @@
     </main>
 
     <footer style="text-align: center; padding: 40px 0; color: #64748b; font-size: 0.9rem;">
-        <p>&copy; {{ site.time | date: '%Y' }} Huda Jassim.</p>
+        <p>&copy; <span id="year"></span> Huda Jassim.</p>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 
     <script src="{{ '/assets/js/youtube.js' | relative_url }}"></script>
 </body>
