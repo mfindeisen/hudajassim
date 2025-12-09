@@ -4,11 +4,11 @@ en:
   role_journalist: "Journalist"
   role_teacher: "English Teacher"
   role_author: "Author"
-  bio_p1: "Hello! I am Huda Jassim, a passionate journalist, English teacher, and author from <strong>Kurdistan</strong><img src='/hudajassim/assets/images/flag.svg' class='inline-flag' alt='Kurdistan Flag'>."
+  bio_p1: "Hello! I am Huda Jassim, a passionate journalist, English teacher, and author from <strong>Kurdistan</strong> <img src='/hudajassim/assets/images/flag.svg' class='inline-flag' alt='Kurdistan Flag'>."
   bio_p2: "I am from Kalakchi and studied in the English Department. I have dedicated myself to media and education. Join me on my journey as I share my thoughts, work, and activities."
   latest_videos_title: "Latest Videos"
   loading_text: "Loading videos..."
-  switcher_label: "Kurdish (Sorani)" # Not used in index.md currently as it links to translated page, but good for consistency if we dynamic switch
+  switcher_label: "Kurdish (Sorani)"
   subscribe_text: "Subscribe on YouTube"
 
 ku:
@@ -17,7 +17,7 @@ ku:
   role_journalist: "ڕۆژنامەنووس"
   role_teacher: "مامۆستای ئینگلیزی"
   role_author: "نووسەر"
-  bio_p1: "سڵاو! من هدى جاسمم، ڕۆژنامەنووس، مامۆستای زمانی ئینگلیزی و نووسەرێکم لە <img src='/hudajassim/assets/images/flag.svg' class='inline-flag' alt='Kurdistan Flag'><strong>کوردستان</strong>."
+  bio_p1: "سڵاو! من هدى جاسمم، ڕۆژنامەنووس، مامۆستای زمانی ئینگلیزی و نووسەرێکم لە <strong>کوردستان</strong> <img src='/hudajassim/assets/images/flag.svg' class='inline-flag' alt='Kurdistan Flag'>."
   bio_p2: ".خەڵكی كەڵەكچیم و بەشی زمانی ئینگلیزیم خوێندووە.خۆم تەرخان كردووە بۆ بواری راگەیاندن و پەروەردە.لەم گەشتمەدا لەگەڵم بن بۆ هاوبەشیكردنی بیروڕاكانم كار و چاڵاكیەكانم"
   latest_videos_title: "نوێترین ڤیدیۆکان"
   loading_text: "بارکردنی ڤیدیۆکان..."

@@ -3,7 +3,7 @@ layout: default
 title: {{ site.data.content.ku.name }}
 description: پۆرتفۆلیۆی فەرمی هودا جاسم - ڕۆژنامەنووس، مامۆستای ئینگلیزی و نووسەر.
 lang: ku
-dir: rtl
+direction: rtl
 permalink: /ku/
 ---
 

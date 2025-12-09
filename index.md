@@ -3,7 +3,7 @@ layout: default
 title: {{ site.data.content.en.name }}
 description: Official Portfolio of Huda Jassim - Journalist, Teacher, and Author.
 lang: en
-dir: ltr
+direction: ltr
 ---
 
 <div class="lang-switcher">

@@ -1,4 +1,4 @@
-<html lang="{{ page.lang | default: 'en' }}" dir="{{ page.dir | default: 'ltr' }}">
+<html lang="{{ page.lang | default: 'en' }}" dir="{{ page.direction | default: 'ltr' }}">
 
 <head>
     <meta charset="UTF-8">
@@ -23,7 +23,7 @@
         {{ content }}
     </main>
 
-    <footer style="text-align: center; padding: 40px 0; color: #64748b; font-size: 0.9rem;">
+    <footer style="text-align: center; padding: 40px 0; color: #64748b; font-size: 0.9rem;" dir="ltr">
         <p>&copy; <span id="year"></span> Huda Jassim.</p>
     </footer>
 
