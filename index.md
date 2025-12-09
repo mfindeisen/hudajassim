@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Huda Jassim
+title: {{ site.data.content.en.name }}
 description: Official Portfolio of Huda Jassim - Journalist, Teacher, and Author.
 lang: en
 dir: ltr
@@ -18,23 +18,18 @@ dir: ltr
         </div>
         
         <div class="content-card">
-            <h1 class="name">Huda Jassim</h1>
-            <h3 style="color: #64748b; font-weight: normal; margin-bottom: 10px;">هدى جاسم</h3>
+            <h1 class="name">{{ site.data.content.en.name }}</h1>
+            <h3 style="color: #64748b; font-weight: normal; margin-bottom: 10px;">{{ site.data.content.ku.name }}</h3>
             
             <div class="roles">
-                <span class="role-badge">Journalist</span>
-                <span class="role-badge">English Teacher</span>
-                <span class="role-badge">Author</span>
+                <span class="role-badge">{{ site.data.content.en.role_journalist }}</span>
+                <span class="role-badge">{{ site.data.content.en.role_teacher }}</span>
+                <span class="role-badge">{{ site.data.content.en.role_author }}</span>
             </div>
 
             <div class="bio">
-                <p>
-                    Hello! I am Huda Jassim, a passionate journalist, English teacher, and author from <strong>Iraqi Kurdistan</strong>.
-                </p>
-                <p>
-                    Originally from Kalakchi and having studied in Amedi, I am dedicated to storytelling and education.
-                    Join me on my journey as I share insights, stories, and lessons.
-                </p>
+                <p>{{ site.data.content.en.bio_p1 }}</p>
+                <p>{{ site.data.content.en.bio_p2 }}</p>
             </div>
 
             <div class="social-links">
@@ -53,11 +48,11 @@ dir: ltr
             </div>
             
             <div class="latest-videos-section">
-                <h2 style="margin-bottom: 20px; font-size: 1.5rem; text-align: center;">Latest Videos</h2>
+                <h2 style="margin-bottom: 20px; font-size: 1.5rem; text-align: center;">{{ site.data.content.en.latest_videos_title }}</h2>
                 <div id="youtube-feed" class="video-grid">
                     <!-- Videos will be loaded here via JS -->
                     <div style="text-align: center; width: 100%;">
-                         <span class="loader">Loading videos...</span>
+                         <span class="loader">{{ site.data.content.en.loading_text }}</span>
                     </div>
                 </div>
             </div>

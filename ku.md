@@ -1,6 +1,6 @@
 ---
 layout: default
-title: هدى جاسم
+title: {{ site.data.content.ku.name }}
 description: پۆرتفۆلیۆی فەرمی هودا جاسم - ڕۆژنامەنووس، مامۆستای ئینگلیزی و نووسەر.
 lang: ku
 dir: rtl
@@ -8,7 +8,7 @@ permalink: /ku/
 ---
 
 <div class="lang-switcher">
-    <a href="{{ '/' | relative_url }}" class="lang-btn">English</a>
+    <a href="{{ '/' | relative_url }}" class="lang-btn">{{ site.data.content.ku.switcher_label }}</a>
 </div>
 
 <div class="hero">
@@ -19,23 +19,18 @@ permalink: /ku/
         </div>
         
         <div class="content-card">
-            <h1 class="name">هدى جاسم</h1>
-            <h3 style="color: #64748b; font-weight: normal; margin-bottom: 10px;">Huda Jassim</h3>
+            <h1 class="name">{{ site.data.content.ku.name }}</h1>
+            <h3 style="color: #64748b; font-weight: normal; margin-bottom: 10px;">{{ site.data.content.ku.title }}</h3>
             
             <div class="roles">
-                <span class="role-badge">ڕۆژنامەنووس</span>
-                <span class="role-badge">مامۆستای ئینگلیزی</span>
-                <span class="role-badge">نووسەر</span>
+                <span class="role-badge">{{ site.data.content.ku.role_journalist }}</span>
+                <span class="role-badge">{{ site.data.content.ku.role_teacher }}</span>
+                <span class="role-badge">{{ site.data.content.ku.role_author }}</span>
             </div>
 
             <div class="bio">
-                <p>
-                    سڵاو! من هدى جاسمم، ڕۆژنامەنووس، مامۆستای زمانی ئینگلیزی و نووسەرێکم لە <strong>کوردستانی عێراق</strong>.
-                </p>
-                <p>
-                    خەڵکی کەڵەکچیم و لە ئامێدی خوێندووم. خۆم تەرخان کردووە بۆ چیرۆکگێڕانەوە و پەروەردە.
-                    لەم گەشتەمدا لەگەڵم بن بۆ هاوبەشکردنی بیروڕا، چیرۆک و وانەکان.
-                </p>
+                <p>{{ site.data.content.ku.bio_p1 }}</p>
+                <p>{{ site.data.content.ku.bio_p2 }}</p>
             </div>
 
             <div class="social-links">
@@ -54,11 +49,11 @@ permalink: /ku/
             </div>
 
              <div class="latest-videos-section">
-                <h2 style="margin-bottom: 20px; font-size: 1.5rem; text-align: center;">نوێترین ڤیدیۆکان</h2>
+                <h2 style="margin-bottom: 20px; font-size: 1.5rem; text-align: center;">{{ site.data.content.ku.latest_videos_title }}</h2>
                 <div id="youtube-feed" class="video-grid">
                      <!-- Videos will be loaded here via JS -->
                     <div style="text-align: center; width: 100%;">
-                         <span class="loader">بارکردنی ڤیدیۆکان...</span>
+                         <span class="loader">{{ site.data.content.ku.loading_text }}</span>
                     </div>
                 </div>
             </div>
