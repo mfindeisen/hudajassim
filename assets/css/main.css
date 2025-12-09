@@ -321,11 +321,11 @@ a:hover {
   margin-right: 15px;
 }
 
-/* Tea Cup with Steam */
+/* Tea Icon (Teapot) */
 .tea-icon {
-  font-size: 1.2rem;
   position: relative;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .tea-icon::before {
@@ -338,6 +338,7 @@ a:hover {
   opacity: 0;
   transition: opacity 0.3s;
   font-family: sans-serif;
+  pointer-events: none;
 }
 
 .tea-icon:hover::before {
