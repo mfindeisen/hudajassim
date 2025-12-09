@@ -279,4 +279,12 @@ a:hover {
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 1.4;
+}/* Inline flag style */
+.inline-flag {
+    height: 1em;
+    width: auto;
+    vertical-align: -0.15em;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
