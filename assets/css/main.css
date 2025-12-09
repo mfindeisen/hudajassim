@@ -129,27 +129,58 @@ a:hover {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  /* Ensure they wrap if needed */
+  gap: 10px;
+  /* Smaller gap */
   margin-top: 2rem;
 }
 
 .social-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 8px;
   background: #ef4444;
   color: white;
-  padding: 10px 24px;
+  padding: 8px 16px;
+  /* Smaller padding */
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
+  font-size: 0.9rem;
+  /* Smaller font */
   transition: transform 0.2s, box-shadow 0.2s;
+  min-width: 120px;
+  /* Consistent minimum width */
 }
 
-.social-btn:hover {
-  text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px -10px rgba(239, 68, 68, 0.5);
+/* Specific colors */
+.social-btn.facebook {
+  background: #1877F2;
+}
+
+.social-btn.linkedin {
+  background: #0A66C2;
+}
+
+.social-btn.youtube {
+  background: #FF0000;
+}
+
+@media (max-width: 600px) {
+  .social-links {
+    gap: 8px;
+  }
+
+  .social-btn {
+    flex: 1 1 auto;
+    /* Grow to fill space but allow shrinking */
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    min-width: auto;
+    /* Remove min-width on very small screens */
+  }
 }
 
 /* Language Switcher */
