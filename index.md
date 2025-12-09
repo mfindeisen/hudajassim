@@ -18,7 +18,7 @@ direction: ltr
         </div>
         
         <div class="content-card">
-            <h1 class="name">{{ site.data.content.en.name }}</h1>
+            <h1 class="name">{{ site.data.content.en.name }} <span class="header-icons"><span class="tea-icon" title="Chai Time">☕</span><span class="book-icon" title="Reading"></span></span></h1>
             <h3 style="color: #64748b; font-weight: normal; margin-bottom: 10px;">{{ site.data.content.ku.name }}</h3>
             
             <div class="roles">

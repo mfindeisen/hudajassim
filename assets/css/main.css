@@ -298,3 +298,90 @@ a:hover {
   margin: 0 2px;
   display: inline-block;
 }
+
+/* Author Secret Badge */
+/* --- Footer Easter Egg: Tea & Book --- */
+.header-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 15px;
+  vertical-align: middle;
+  font-size: 0.6em;
+  /* Scale relative to h1 */
+  color: var(--accent-color);
+  background: none;
+  -webkit-text-fill-color: initial;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+}
+
+[dir="rtl"] .header-icons {
+  margin-left: 0;
+  margin-right: 15px;
+}
+
+/* Tea Cup with Steam */
+.tea-icon {
+  font-size: 1.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.tea-icon::before {
+  content: "⌇";
+  position: absolute;
+  top: -10px;
+  left: 4px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: sans-serif;
+}
+
+.tea-icon:hover::before {
+  animation: steam 1.5s infinite;
+  opacity: 1;
+}
+
+@keyframes steam {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateY(-15px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Book Opening Animation */
+.book-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.book-icon::after {
+  content: "📕";
+  /* Closed book */
+  display: inline-block;
+}
+
+.book-icon:hover::after {
+  content: "📖";
+  /* Open book */
+  transform: scale(1.1);
+}
+
+.book-icon:hover {
+  transform: translateY(-2px);
+}
