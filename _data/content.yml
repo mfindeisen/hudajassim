@@ -10,6 +10,11 @@ en:
   loading_text: "Loading videos..."
   switcher_label: "Kurdish (Sorani)"
   subscribe_text: "Subscribe on YouTube"
+  blog_title: "Blog"
+  blog_description: "Thoughts, stories, and updates from Huda Jassim"
+  back_to_home: "← Back to Home"
+  back_to_blog: "← Back to Blog"
+  no_posts: "No blog posts yet. Check back soon!"
 
 ku:
   name: "هدى جاسم"
@@ -23,3 +28,8 @@ ku:
   loading_text: "بارکردنی ڤیدیۆکان..."
   switcher_label: "English"
   subscribe_text: "بەشداربە لە یوتیوب"
+  blog_title: "بڵۆگ"
+  blog_description: "بیروڕا، چیرۆک و نوێکاریەکان لە هودا جاسم"
+  back_to_home: "← گەڕانەوە بۆ سەرەکی"
+  back_to_blog: "← گەڕانەوە بۆ بڵۆگ"
+  no_posts: "هیچ پۆستی بڵۆگێک هێشتا نییە. دواتر سەردان بکە!"
