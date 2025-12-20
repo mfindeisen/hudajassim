@@ -1,0 +1,49 @@
+<div class="lang-switcher">
+    <a href="<%= baseurl %>/ku/blog" class="lang-btn">کوردی (سۆرانی)</a>
+</div>
+
+<div class="hero">
+    <img src="<%= baseurl %>/assets/images/channels4_banner.jpg" alt="Huda Jassim Banner" class="banner-img">
+    <div class="container">
+        <div class="profile-container">
+            <img src="<%= baseurl %>/assets/images/channels4_profile.jpg" alt="Huda Jassim" class="profile-img">
+        </div>
+        
+        <div class="content-card">
+            <a href="<%= baseurl %>/" class="back-link"><%- contentData.en.back_to_home %></a>
+            <h1 class="name"><%- contentData.en.blog_title %> <span class="header-icons"><span class="tea-icon" title="Tea Time">🫖</span><span class="book-icon" title="Reading"></span></span></h1>
+            <p style="color: #94a3b8; margin-bottom: 2rem; text-align: center;"><%- contentData.en.blog_description %></p>
+            
+            <div class="blog-list">
+                <% if (posts && posts.length > 0) { %>
+                    <% posts.forEach(post => { %>
+                    <article class="blog-card">
+                        <a href="<%= baseurl %>/posts/<%= post.slug %>" class="blog-card-link">
+                            <div class="blog-card-content">
+                                <h2><%- post.title %></h2>
+                                <p class="blog-excerpt">
+                                    <% if (post.description) { %>
+                                        <%- post.description %>
+                                    <% } else { %>
+                                        <%- post.excerpt %>
+                                    <% } %>
+                                </p>
+                                <div class="blog-meta">
+                                    <time datetime="<%= post.dateISO %>">
+                                        <%= post.dateFormatted %>
+                                    </time>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <% }); %>
+                <% } else { %>
+                    <div class="no-posts">
+                        <p><%- contentData.en.no_posts %></p>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+

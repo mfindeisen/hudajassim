@@ -1,0 +1,37 @@
+<div class="lang-switcher">
+    <% if (post.lang === 'en') { %>
+        <a href="<%= baseurl %>/ku/blog" class="lang-btn">کوردی (سۆرانی)</a>
+    <% } else { %>
+        <a href="<%= baseurl %>/blog" class="lang-btn"><%- contentData.ku.switcher_label %></a>
+    <% } %>
+</div>
+
+<div class="hero">
+    <img src="<%= baseurl %>/assets/images/channels4_banner.jpg" alt="Huda Jassim Banner" class="banner-img">
+    <div class="container">
+        <div class="profile-container">
+            <img src="<%= baseurl %>/assets/images/channels4_profile.jpg" alt="Huda Jassim" class="profile-img">
+        </div>
+        
+        <div class="content-card">
+            <div class="post-header">
+                <% if (post.lang === 'en') { %>
+                    <a href="<%= baseurl %>/blog" class="back-link"><%- contentData.en.back_to_blog %></a>
+                <% } else { %>
+                    <a href="<%= baseurl %>/ku/blog" class="back-link"><%- contentData.ku.back_to_blog %></a>
+                <% } %>
+                <h1 class="name"><%- post.title %> <span class="header-icons"><span class="tea-icon" title="Tea Time">🫖</span><span class="book-icon" title="Reading"></span></span></h1>
+                <div class="post-meta">
+                    <time datetime="<%= post.dateISO %>">
+                        <%= post.dateFormatted %>
+                    </time>
+                </div>
+            </div>
+            
+            <div class="post-content">
+                <%- post.content %>
+            </div>
+        </div>
+    </div>
+</div>
+

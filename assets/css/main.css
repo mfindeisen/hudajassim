@@ -415,6 +415,14 @@ a:hover {
   padding: 24px;
 }
 
+.blog-card-content {
+  text-align: left !important;
+}
+
+[dir="rtl"] .blog-card-content {
+  text-align: right !important;
+}
+
 .blog-card-content h2 {
   font-size: 1.5rem;
   margin-bottom: 12px;
@@ -478,6 +486,24 @@ a:hover {
   line-height: 1.8;
   color: #cbd5e1;
   margin-top: 20px;
+  text-align: initial;
+}
+
+[dir="rtl"] .post-content {
+  text-align: initial;
+}
+
+/* Quill text alignment classes */
+.post-content .ql-align-center {
+  text-align: center !important;
+}
+
+.post-content .ql-align-right {
+  text-align: right !important;
+}
+
+.post-content .ql-align-justify {
+  text-align: justify !important;
 }
 
 .post-content h2 {
@@ -552,6 +578,16 @@ a:hover {
   height: auto;
   border-radius: 8px;
   margin: 1.5rem 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Quill image alignment support */
+.post-content p img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 768px) {

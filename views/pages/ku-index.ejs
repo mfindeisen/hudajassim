@@ -1,41 +1,33 @@
----
-layout: default
-title: {{ site.data.content.en.name }}
-description: Official Portfolio of Huda Jassim - Journalist, Teacher, and Author.
-lang: en
-direction: ltr
----
-
 <div class="lang-switcher">
-    <a href="{{ '/ku' | relative_url }}" class="lang-btn">کوردی (سۆرانی)</a>
+    <a href="<%= baseurl %>/" class="lang-btn"><%- contentData.ku.switcher_label %></a>
 </div>
 
 <div class="hero">
-    <img src="{{ '/assets/images/channels4_banner.jpg' | relative_url }}" alt="Huda Jassim Banner" class="banner-img">
+    <img src="<%= baseurl %>/assets/images/channels4_banner.jpg" alt="Huda Jassim Banner" class="banner-img">
     <div class="container">
         <div class="profile-container">
-            <img src="{{ '/assets/images/channels4_profile.jpg' | relative_url }}" alt="Huda Jassim" class="profile-img">
+            <img src="<%= baseurl %>/assets/images/channels4_profile.jpg" alt="Huda Jassim" class="profile-img">
         </div>
         
         <div class="content-card">
-            <h1 class="name">{{ site.data.content.en.name }} <span class="header-icons"><span class="tea-icon" title="Tea Time">🫖</span><span class="book-icon" title="Reading"></span></span></h1>
-            <h3 style="color: #64748b; font-weight: normal; margin-bottom: 10px;">{{ site.data.content.ku.name }}</h3>
+            <h1 class="name"><%- contentData.ku.name %> <span class="header-icons"><span class="tea-icon" title="Tea Time">🫖</span><span class="book-icon" title="Reading"></span></span></h1>
+            <h3 style="color: #64748b; font-weight: normal; margin-bottom: 10px;"><%- contentData.ku.title %></h3>
             
             <div class="roles">
-                <span class="role-badge">{{ site.data.content.en.role_journalist }}</span>
-                <span class="role-badge">{{ site.data.content.en.role_teacher }}</span>
-                <span class="role-badge">{{ site.data.content.en.role_author }}</span>
+                <span class="role-badge"><%- contentData.ku.role_journalist %></span>
+                <span class="role-badge"><%- contentData.ku.role_teacher %></span>
+                <span class="role-badge"><%- contentData.ku.role_author %></span>
             </div>
 
             <div class="bio">
-                <p>{{ site.data.content.en.bio_p1 }}</p>
-                <p>{{ site.data.content.en.bio_p2 }}</p>
+                <p><%- contentData.ku.bio_p1 %></p>
+                <p><%- contentData.ku.bio_p2 %></p>
             </div>
 
             <div class="social-links">
-                <a href="{{ '/blog' | relative_url }}" class="social-btn" style="background: var(--accent-color);">
+                <a href="<%= baseurl %>/ku/blog" class="social-btn" style="background: var(--accent-color);">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-                    Blog
+                    <%- contentData.ku.blog_title %>
                 </a>
                 <a href="https://www.youtube.com/channel/UCqxDgbb_g_yfNahEAXyXwZA" target="_blank" class="social-btn youtube">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
@@ -50,16 +42,17 @@ direction: ltr
                     LinkedIn
                 </a>
             </div>
-            
-            <div class="latest-videos-section">
-                <h2 style="margin-bottom: 20px; font-size: 1.5rem; text-align: center;">{{ site.data.content.en.latest_videos_title }}</h2>
+
+             <div class="latest-videos-section">
+                <h2 style="margin-bottom: 20px; font-size: 1.5rem; text-align: center;"><%- contentData.ku.latest_videos_title %></h2>
                 <div id="youtube-feed" class="video-grid">
-                    <!-- Videos will be loaded here via JS -->
+                     <!-- Videos will be loaded here via JS -->
                     <div style="text-align: center; width: 100%;">
-                         <span class="loader">{{ site.data.content.en.loading_text }}</span>
+                         <span class="loader"><%- contentData.ku.loading_text %></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
