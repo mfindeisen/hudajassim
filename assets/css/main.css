@@ -62,16 +62,22 @@
   font-family: 'Noto Naskh Arabic', var(--font-main);
 }
 
+html {
+  background-color: var(--bg-color);
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg-gradient);
+  background-color: var(--bg-color);
+  background-image: var(--bg-gradient);
   background-attachment: fixed;
   color: var(--text-color);
   font-family: var(--font-main);
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
+  min-height: 100vh;
 }
 
 h1,
@@ -674,6 +680,9 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
   .blog-card-link {
     padding: 20px;
   }
