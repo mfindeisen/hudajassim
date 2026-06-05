@@ -404,10 +404,11 @@ a:hover {
 /* Author Secret Badge */
 /* --- Footer Easter Egg: Tea & Book --- */
 .header-icons {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-left: 15px;
+  margin: 10px 0 0 0;
   vertical-align: middle;
   font-size: 0.6em;
   /* Scale relative to h1 */
@@ -416,11 +417,6 @@ a:hover {
   -webkit-text-fill-color: initial;
   -webkit-background-clip: border-box;
   background-clip: border-box;
-}
-
-[dir="rtl"] .header-icons {
-  margin-left: 0;
-  margin-right: 15px;
 }
 
 /* Tea Icon (Teapot) */
