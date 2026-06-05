@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Disallow Decap CMS Admin panel
+Disallow: /admin/
+
+Sitemap: https://hudajassim.com/sitemap.xml

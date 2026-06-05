@@ -2,8 +2,8 @@ title: "Huda Jassim Portfolio"
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Portfolio von Huda Jassim - Journalistin, English Teacher und Autorin aus Iraqi Kurdistan.
-baseurl: "/hudajassim"
-url: "https://mfindeisen.github.io"
+baseurl: ""
+url: "https://hudajassim.com"
 twitter_username: jekyllrb
 github_username: jekyll
 
