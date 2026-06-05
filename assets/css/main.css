@@ -321,6 +321,10 @@ a:hover {
   text-decoration: none;
 }
 
+.lang-mobile {
+  display: none;
+}
+
 /* Video Grid */
 .latest-videos-section {
   margin-top: 60px;
@@ -665,17 +669,32 @@ a:hover {
     background-attachment: scroll;
   }
 
+  .lang-desktop {
+    display: none;
+  }
+
+  .lang-mobile {
+    display: inline;
+  }
+
   .top-controls {
-    position: relative;
-    top: auto;
-    right: auto;
-    justify-content: center;
-    margin: 20px auto 0 auto;
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     z-index: 100;
+    margin: 0;
   }
 
   .profile-container {
-    margin-top: 20px;
+    margin-top: 50px;
+  }
+
+  .lang-btn {
+    padding: 8px 12px;
   }
 
   .blog-card-link {

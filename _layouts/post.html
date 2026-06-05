@@ -13,9 +13,15 @@ layout: default
                 <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
             </button>
             {% if page.lang == 'en' %}
-                <a href="{{ '/ku/blog' | relative_url }}" class="lang-btn">کوردی (سۆرانی)</a>
+                <a href="{{ '/ku/blog' | relative_url }}" class="lang-btn">
+                    <span class="lang-desktop">کوردی (سۆرانی)</span>
+                    <span class="lang-mobile">KU</span>
+                </a>
             {% else %}
-                <a href="{{ '/blog' | relative_url }}" class="lang-btn">{{ site.data.content.ku.switcher_label }}</a>
+                <a href="{{ '/blog' | relative_url }}" class="lang-btn">
+                    <span class="lang-desktop">{{ site.data.content.ku.switcher_label }}</span>
+                    <span class="lang-mobile">EN</span>
+                </a>
             {% endif %}
         </div>
         
