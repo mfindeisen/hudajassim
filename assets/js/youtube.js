@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <div class="play-icon">▶</div>
                             </div>
                             <div class="video-info">
-                                <h4>${item.title}</h4>
+                                <h4 dir="auto">${item.title}</h4>
                             </div>
                         </a>
                     `;
