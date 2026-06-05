@@ -417,6 +417,10 @@ a:hover {
   -webkit-text-fill-color: initial;
   -webkit-background-clip: border-box;
   background-clip: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Tea Icon (Teapot) */
